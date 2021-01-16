@@ -49,7 +49,7 @@ def addExpense(expense):
 	lastRow = len(sheet.get_all_values())
 	sliceStr = "A"+str(lastRow+1)+":E"+str(lastRow+1)
 	
-	sheet.update(sliceStr, [[expense.id, expense.category, expense.amount,expense.billable]])
+	sheet.update(sliceStr, [[expense.id, expense.category, expense.amount,expense.time,expense.billable]])
 	log("Saved Expense to the spreadhseet.")
 	saveToCsv()
 
