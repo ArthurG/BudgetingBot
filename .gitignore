@@ -5,6 +5,7 @@ __pycache__/
 
 config.txt
 client_secret.json
+Expenses.csv
 
 # C extensions
 *.so
